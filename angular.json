@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "gambateh": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "zh": "src/locale/messages.zh.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,6 +19,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": [
+              "zh"
+            ],
             "outputPath": "dist/gambateh",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -23,6 +32,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -97,5 +107,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "5baa94c8-29b0-4de5-a200-532ce43436db"
   }
 }
