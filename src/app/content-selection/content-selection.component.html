@@ -1,0 +1,4 @@
+<div (mouseenter)="isHovered = true; animDone()" (mouseleave)="isHovered = false" style="min-width:400px" class="m-3 card card-background">
+    <img [@swing]="animState" (@swing.done)="animDone()" src='{{ imgSrc }}' class="w-50 p-5" alt="this is test image">
+</div>
+
