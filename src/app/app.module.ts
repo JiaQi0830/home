@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContentSelectionComponent } from './content-selection/content-selection.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FirstPageComponent } from './first-page/first-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContentSelectionComponent
+    ContentSelectionComponent,
+    FirstPageComponent
   ],
   imports: [
     BrowserModule,

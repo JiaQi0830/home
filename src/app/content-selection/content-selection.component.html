@@ -1,4 +1,6 @@
-<div (mouseenter)="isHovered = true; animDone()" (mouseleave)="isHovered = false" style="min-width:400px" class="card card-background h-100">
+<div (mouseenter)="isHovered = true; animDone()" (mouseleave)="isHovered = false" 
+    style="min-width:400px" class="card card-background h-100"
+    routerLink="/memo" >
     <div class="row px-5 h-100">
         <img [@swing]="animState" (@swing.done)="animDone()" src='{{ imgSrc }} ' class="col h-100 w-50 p-5" alt=" {{imageText}} ">
         <div class="col my-auto">
